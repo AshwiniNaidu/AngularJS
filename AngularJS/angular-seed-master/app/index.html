@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <style type="text/css">
+    .red {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+<div ng-controller="hotelsController">
+    <!--<h3 ng-bind="test"></h3>
+    <span>Show Hotels:  </span><input type="checkbox" ng-model="showHotels" />
+    <br />
+    <br />-->
+     <!-- <div ng-repeat="hotel in hotels" ng-show="showHotels" style="border-bottom: 1px solid black; width: 30%; padding: 10px;" ng-class="{red: hotel.rate == 11000}">
+        <img ng-src={{hotel.image}} width="100px" />
+        <div ng-bind="hotel.name"></div>
+        <div ng-bind="hotel.rate"></div>
+        <div ng-bind="hotel.location"></div>
+      </div>
+-->
+ <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">BookMySuite</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href="#/hotels">Hotels</a></li>
+          <li ><a href="#/newHotel">New Hotel</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<ng-view></ng-view>
+<!--<div class="container">
+        <div class="row well">
+          <strong>Search Hotels:</strong>
+          <input type="text" ng-model="searchTerm">
+        </div>
+        <br />
+        <div class="row well" ng-repeat="hotel in hotels | filter: {name: searchTerm} | orderBy: 'rating'">
+            <div class="col-md-3 col-sm-3">
+              <img ng-src={{hotel.image}} width="100px" />
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="h3" ng-bind="hotel.name | uppercase"></div>
+              <div class="h5" ng-bind="hotel.location"></div>
+               <div class="h5" ng-bind="hotel.rate | currencyCal | currency"></div>
+            </div>
+            <div class="col-md-2">
+              <div>
+                <button type="button" ng-click="upVote(hotel)" class="btn btn-default btn-xs">
+                  <span class="glyphicon glyphicon-chevron-up"></span>
+                </button>
+              </div>
+              <span class="h4"><div ng-bind="hotel.rating" class="label label-info"></div></span>
+              <div>
+                <button type="button" ng-click="downVote(hotel)" class="btn btn-default btn-xs">
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-1">
+                <button type="button" ng-click="upVote(hotel)">Vote</button>
+            </div>
+
+          </div>
+      </div>-->
+</div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/angular-sanitize.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

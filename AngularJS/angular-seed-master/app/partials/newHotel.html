@@ -1,0 +1,53 @@
+<style type="text/css">
+.ng-dirty .ng-invalid {
+  border-color: #ff0000;
+}
+
+/*
+.ng-dirty .ng-valid {
+  border-color: green;
+}*/
+</style>
+<div class="container">
+<form class="form-horizontal" role="form" name="hotelForm">
+  <div class="row well" ng-show="hotelForm.$valid">
+    <span>Valid Form. Proceed to Save.</span>
+    <img src="img/tick.png"  />
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Hotel Name</label>
+    <div class="col-sm-10">
+      <input type="text" required class="form-control" placeholder="Enter Name" ng-model="hotel.name">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Location</label>
+    <div class="col-sm-10">
+      <input type="text" required class="form-control" ng-model="hotel.location" placeholder="Enter Location">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Daily Rate</label>
+    <div class="col-sm-10">
+      <input type="number" required class="form-control" ng-model="hotel.rate" placeholder="Enter Daily Rate">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Rating</label>
+    <div class="col-sm-10">
+      <input type="number" min="0" max="10" class="form-control" ng-model="hotel.rating" placeholder="Enter Rating">
+    </div>
+  </div>
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Image Url</label>
+    <div class="col-sm-10">
+      <input type="text" required class="form-control" ng-model="hotel.image" placeholder="Enter image url">
+    </div>
+  </div>
+   <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" ng-click="showData(hotel, hotelForm)" class="btn btn-default">Save</button>
+    </div>
+  </div>
+</form>
+</div>

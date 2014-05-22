@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row well">
+	<div class="col-md-6 col-sm-6">
+		<img ng-src="img/{{hotelDetails.image}}" width="300px" />
+         <div class="h3" ng-bind="hotelDetails.name | uppercase"></div>
+         <div class="h5" ng-bind="hotelDetails.location"></div>
+         <div class="h5" ng-bind="hotelDetails.rate | currencyCal | currency"></div>
+      </div>
+     </div>	
+      <div class="row well">
+      	<label style="vertical-align: middle;">Enter your review</label>
+      	<textarea ng-model="hotelDetails.review"></textarea>
+ 	    <button type="submit" ng-click="saveComments(hotelDetails.review)" class="btn btn-default">Comment</button>
+      </div>
+
+</div>

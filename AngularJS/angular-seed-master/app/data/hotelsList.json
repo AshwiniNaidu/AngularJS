@@ -1,0 +1,36 @@
+[
+  			{
+  				"image": "hotel1.jpg",
+  				"name": "Taj Vivanta",
+  				"rate": 10000,
+  				"rating": 8,
+  				"location": "Begumpet",
+  				"review": "<p>This is a must place to visit. <strong>Delicious food </strong> and decent ambience.</p>"
+  			},
+  			{
+  				"image": "hotel2.jpg",
+  				"name": "Awasa",
+  				"rate": 11000,
+  				"rating": 5,
+  				"location": "Madhapur",
+  				"review": "<p>Average place. Can visit once for a new experience.</p>"
+
+  			},
+  			{
+  				"image": "hotel3.jpg",
+  				"name": "Park Hyatt",
+  				"rate": 12000,
+  				"rating": 6,
+  				"location": "Gachibowli",
+  				"review": "<p>Very expensive and not worth to <u>spend</u>.</p>"
+
+  			},
+  			{
+  				"image": "hotel4.jpg",
+  				"name": "Westin",
+  				"rate": 13000,
+  				"rating": 7,
+  				"location": "Hitec City",
+  				"review": "<span> Good place except for the starters. <strong>Services</strong> are appreciable.</p>"
+  			}
+  		]
