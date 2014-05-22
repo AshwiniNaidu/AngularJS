@@ -26,11 +26,26 @@ angular.module('myApp.directives', []).
   }]).
   directive('hotelSummary', function() {
   		return {
-  			restrict: 'AE',
+  			restrict: 'E',
   			templateUrl: "templates/hotelSummary.html",
   			scope: {
-  				targetHotel: "="
+  				targetHotel: "=hotel"
   			}
   		}
 
+  }).
+  directive('rating', function() {
+
+  	return {
+  		restrict: 'E',
+  		templateUrl: "templates/rating.html",
+  		scope: {
+  			score: "=",
+  			up: "&",
+  			down: "&"
+  		}
+
+  	}
   });
+
+
